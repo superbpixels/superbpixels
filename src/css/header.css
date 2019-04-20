@@ -1,0 +1,141 @@
+/* Logo / Slogan */
+
+.logo-wrapper {
+  padding: 1.5rem 0 0 1.5rem;
+}
+
+.logo-letter {
+  font-family: "Heebo", sans-serif;
+  font-weight: 900;
+  font-size: 5.4rem;
+  text-shadow: 1px 1px 1px #aaa;
+}
+
+.logo-p {
+  color: #2e282a;
+}
+
+.logo-word-ending {
+  font-family: "Heebo";
+  font-size: 5.4rem;
+  font-weight: 100;
+  display: inline-block;
+  max-width: 14rem;
+  width: 0;
+  opacity: 0;
+  animation: expandText 3s forwards ease-out;
+  animation-delay: 1.5s;
+}
+
+.slogan {
+  font-family: "Heebo";
+  font-size: 2rem;
+  font-weight: 100;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 3s;
+  padding: 1rem 0 0 0.3rem;
+}
+
+.slogan-pp {
+  font-weight: 600;
+  color: #17bebb;
+}
+
+@keyframes expandText {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Nav */
+
+.nav-text {
+  color: #fff;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.nav-blank {
+  height: 50%;
+}
+
+.no-gutters {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.home {
+  background: #ef3e36;
+}
+
+.our-work {
+  background: #17bebb;
+}
+
+.contact {
+  background: #2e282a;
+}
+
+.prices-services {
+  background: #edb88b;
+}
+
+.blog {
+  background: #ffcced;
+}
+
+.nav-top {
+  position: relative;
+  top: -100%;
+  animation: slideInFromTop 1s forwards;
+  animation-delay: 2s;
+}
+
+.nav-bottom {
+  position: relative;
+  bottom: -100%;
+  opacity: 0;
+  animation: slideInFromBottom 1s forwards;
+  animation-delay: 2s;
+}
+/* EF3E36  17BEBB  2E282A  EDB88B  FFCCED */
+
+@keyframes slideInFromTop {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    bottom: -100%;
+    opacity: 0;
+  }
+  to {
+    bottom: 0%;
+    opacity: 1;
+  }
+}

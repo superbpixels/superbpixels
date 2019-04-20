@@ -1,2 +1,0 @@
-# superbpixels
-Created with CodeSandbox

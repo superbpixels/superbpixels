@@ -1,0 +1,12 @@
+body,
+html {
+  font-family: "Heebo", sans-serif;
+  font-size: 10px;
+}
+
+.home-page {
+  height: 100%;
+  min-height: 100vh;
+  background-image: url(https://uploads.codesandbox.io/uploads/user/edbd980f-e613-45d4-b0d3-dc06eb885b47/tNY6-desktop.jpg);
+  background-size: cover;
+}
